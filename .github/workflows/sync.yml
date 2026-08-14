@@ -1,0 +1,28 @@
+# Еженедельный синк датасета с живых эндпоинтов сайта.
+name: sync-data
+on:
+  schedule:
+    - cron: '40 3 * * 1' # понедельник 03:40 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch live data
+        run: |
+          set -e
+          curl -fsSL https://coloprice.com/data/colocation-price-index.json -o data/colocation-price-index.json
+          curl -fsSL https://coloprice.com/data/gpu-price-index.json        -o data/gpu-price-index.json
+          curl -fsSL https://coloprice.com/data/bess-price-index.json      -o data/bess-price-index.json
+      - name: Commit if changed
+        run: |
+          git config user.name 'coloprice-data-sync'
+          git config user.email 'actions@github.com'
+          git add data
+          git diff --cached --quiet || git commit -m "data: weekly sync from coloprice.com"
+          git push

@@ -1,0 +1,82 @@
+{
+ "name": "The Colocation Price Index — market benchmarks",
+ "url": "https://coloprice.com/data/",
+ "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
+ "updated": "2026-08-03",
+ "period": "H2 2025 – Q2 2026",
+ "markets": [
+  {
+   "slug": "north-america",
+   "name": {
+    "en": "North America (avg)",
+    "ru": "Северная Америка (сред.)",
+    "uk": "Північна Америка (сер.)"
+   },
+   "wholesaleUsdKwMo": 196,
+   "retailRackUsdMo": [
+    500,
+    1500
+   ],
+   "yoyPct": 6.5,
+   "source": {
+    "label": "CBRE, North America Data Center Trends H2 2025",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h2-2025"
+   }
+  },
+  {
+   "slug": "northern-virginia",
+   "name": {
+    "en": "Northern Virginia (Ashburn)",
+    "ru": "Северная Вирджиния (Ашберн)",
+    "uk": "Північна Вірджинія (Ашберн)"
+   },
+   "wholesaleUsdKwMo": 215,
+   "retailRackUsdMo": null,
+   "yoyPct": 19,
+   "source": {
+    "label": "CBRE, H2 2025 (10MW+ blocks)",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h2-2025"
+   }
+  },
+  {
+   "slug": "singapore",
+   "name": {
+    "en": "Singapore",
+    "ru": "Сингапур",
+    "uk": "Сінгапур"
+   },
+   "wholesaleUsdKwMo": 403,
+   "wholesaleRange": [
+    330,
+    475
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "thailand-bangkok",
+   "name": {
+    "en": "Thailand (Bangkok)",
+    "ru": "Таиланд (Бангкок)",
+    "uk": "Таїланд (Бангкок)"
+   },
+   "wholesaleUsdKwMo": null,
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "collecting": true,
+   "source": {
+    "label": "Index v1 — data collection in progress",
+    "url": null
+   }
+  }
+ ],
+ "notes": {
+  "en": "Wholesale = committed IT load, USD per kW per month, excluding metered power. Retail = per-rack (3–5 kW) monthly range. Markets marked “collecting” ship with the next quarterly release.",
+  "ru": "Wholesale — законтрактованная IT-нагрузка, USD за кВт в месяц, без метрируемой энергии. Retail — диапазон за стойку (3–5 кВт) в месяц. Рынки с пометкой «сбор данных» выйдут в следующем квартальном релизе.",
+  "uk": "Wholesale — законтрактоване IT-навантаження, USD за кВт на місяць, без метрованої енергії. Retail — діапазон за стійку (3–5 кВт) на місяць. Ринки з позначкою «збір даних» вийдуть у наступному квартальному релізі."
+ }
+}
