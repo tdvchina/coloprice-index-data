@@ -2,7 +2,7 @@
  "name": "Coloprice BESS Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-08-14",
+ "updated": "2026-08-17",
  "benchmarks": {
   "china_tender_avg_4h_usd_kwh": 75,
   "china_tender_avg_2h_usd_kwh": 84,
@@ -202,6 +202,22 @@
    "cycle_life": 15000,
    "source_name": "ESS News",
    "source_url": "https://www.ess-news.com/2026/04/09/envision-launches-12-5-mwh-ai-storage-system-starts-production-of-790-ah-lfp-cell/",
+   "as_of": "2026-08"
+  },
+  {
+   "slug": "eve-energy-6-9mwh-628ah",
+   "model": "6.9 MWh BESS (628Ah CTP)",
+   "maker": "EVE Energy",
+   "country": "China",
+   "capacity_mwh": 6.9,
+   "price_usd_per_kwh_min": null,
+   "price_usd_per_kwh_max": null,
+   "price_note": "No published price — EVE has not disclosed pricing for this launch. 20-ft cell-to-pack container on 628Ah cells, >430 Wh/L density, >10,000 cycles; over 50 GWh in large-format battery deals signed at launch (ESIE 2026), with further 67 GWh+ orders announced at SNEC 2026. Directional guide only: as a tier-1 China DC block it would likely price near China's H1 2026 tender benchmarks ($75-84/kWh average), but no vendor quote exists to confirm.",
+   "availability": "enterprise-only",
+   "chemistry": "LFP",
+   "cycle_life": 10000,
+   "source_name": "PR Newswire (EVE Energy)",
+   "source_url": "https://www.prnewswire.com/apac/news-releases/eve-energy-launches-6-9mwh-bess-globally-signs-over-50gwh-in-large-format-battery-deals-302735641.html",
    "as_of": "2026-08"
   },
   {
