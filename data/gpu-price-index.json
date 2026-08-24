@@ -2,19 +2,19 @@
  "name": "Coloprice GPU Rental Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-08-17",
+ "updated": "2026-08-24",
  "gpus": [
   {
    "model": "NVIDIA GB200 (per GPU, NVL72)",
    "vramGb": 186,
    "onDemandUsdHr": {
     "min": 10.5,
-    "median": 17.5,
+    "median": 18.79,
     "max": 27.04
    },
    "contract1yUsdHr": null,
    "note": {
-    "en": "Rack-scale product with very limited on-demand access: CoreWeave still lists the cheapest published rate (~$10.50/GPU-hr), while the tracked provider average has drifted up to ~$17-18/GPU-hr as more enterprise-only listings entered pricing indexes; hyperscaler bare-metal (Azure) tops out at ~$27/GPU-hr. Most capacity (Together AI, Oracle, Azure) is still sold as reserved contracts with quote-only pricing."
+    "en": "Rack-scale product with very limited on-demand access: CoreWeave still lists the cheapest published rate (~$10.50/GPU-hr), while GetDeploying's 9-provider tracker average edged up to ~$18.79/GPU-hr as more enterprise-only listings entered pricing indexes; hyperscaler bare-metal (Azure ND GB200 v6) tops out at ~$27/GPU-hr. Most capacity (Together AI, Oracle, Azure) is still sold as reserved contracts with quote-only pricing; CoreWeave will quote 1-year terms on request (~35% off list) but publishes no rate card."
    },
    "sources": [
     {
@@ -27,7 +27,7 @@
     },
     {
      "label": "Spheron — GB200 NVL72 pricing guide",
-     "url": "https://www.spheron.network/blog/nvidia-gb200-nvl72-guide/"
+     "url": "https://www.spheron.network/guides/nvidia-gb200-nvl72-guide/"
     }
    ]
   },
@@ -35,13 +35,13 @@
    "model": "NVIDIA B200 (180GB)",
    "vramGb": 180,
    "onDemandUsdHr": {
-    "min": 3.5,
-    "median": 6.5,
+    "min": 3.12,
+    "median": 6.99,
     "max": 16.11
    },
    "contract1yUsdHr": null,
    "note": {
-    "en": "Min holds at Vultr's ~$3.50/GPU-hr; typical on-demand ticked up to ~$6.50/GPU-hr as specialized neoclouds (Vast.ai, Hyperbolic, Hyperstack) cluster $5.90-7.20 alongside pricier Lambda/Nebius/CoreWeave listings, while Google Cloud's a4-highgpu-8g stays the ceiling at $16.11/GPU-hr. No clean published 1-year rate."
+    "en": "Floor shifted providers: Vultr repriced its early-access B200 up to ~$8.50/GPU-hr, so Verda is now the cheapest on-demand listing at ~$3.12/GPU-hr. Typical on-demand eased to ~$6.99/GPU-hr (-9% vs the prior check) as new Blackwell capacity from Nebius, Lambda and CoreWeave started catching up with demand, while Google Cloud's a4-highgpu-8g stays the ceiling at $16.11/GPU-hr. No clean published 1-year rate."
    },
    "sources": [
     {
@@ -49,12 +49,12 @@
      "url": "https://getdeploying.com/gpus/nvidia-b200"
     },
     {
-     "label": "Thunder Compute — B200 pricing",
-     "url": "https://www.thundercompute.com/blog/nvidia-b200-pricing"
+     "label": "ComputePrices — B200 GPU price",
+     "url": "https://computeprices.com/gpus/b200"
     },
     {
-     "label": "Lambda pricing",
-     "url": "https://lambda.ai/pricing"
+     "label": "Thunder Compute — B200 pricing",
+     "url": "https://www.thundercompute.com/guides/nvidia-b200-pricing"
     },
     {
      "label": "Nebius AI Cloud prices",
@@ -81,7 +81,7 @@
     },
     {
      "label": "Spheron — MI300X/MI355X pricing 2026",
-     "url": "https://www.spheron.network/blog/amd-mi300x-mi355x-pricing-2026/"
+     "url": "https://www.spheron.network/guides/amd-mi300x-mi355x-pricing-2026/"
     },
     {
      "label": "GPUCloudPrices — MI355X",
@@ -98,12 +98,12 @@
    "vramGb": 141,
    "onDemandUsdHr": {
     "min": 2.3,
-    "median": 4.15,
+    "median": 4.3,
     "max": 13.78
    },
    "contract1yUsdHr": 3.72,
    "note": {
-    "en": "Min from FluidStack ($2.30, unchanged), typical neocloud range clusters at $4.11-4.15 (getdeploying, AIMultiple), but the hyperscaler ceiling nearly doubled to ~$13.78/GPU-hr as Azure's ND96isr H200 v5 became directly listed. Reserved-rate listings still average ~$3.72/GPU-hr."
+    "en": "Min from FluidStack ($2.30, unchanged); typical neocloud range drifted up slightly to ~$4.3/GPU-hr (AIMultiple ~$4.11, GetDeploying's cross-provider median ~$4.48) as booked-out capacity through Aug-Sep 2026 pushes demand pressure. Hyperscaler ceiling holds at Azure's ND96isr H200 v5, ~$13.78/GPU-hr — no reserved SKU exists for that instance. Reserved-rate listings still average ~$3.72/GPU-hr."
    },
    "sources": [
     {
@@ -116,7 +116,7 @@
     },
     {
      "label": "Spheron — Azure H200 pricing 2026",
-     "url": "https://www.spheron.network/blog/azure-h200-pricing-2026/"
+     "url": "https://www.spheron.network/guides/azure-h200-pricing-2026/"
     }
    ]
   },
@@ -125,12 +125,12 @@
    "vramGb": 80,
    "onDemandUsdHr": {
     "min": 1.49,
-    "median": 3.35,
-    "max": 12.29
+    "median": 3.3,
+    "max": 11.06
    },
    "contract1yUsdHr": 2.35,
    "note": {
-    "en": "Widest rental market (48+ providers): marketplace/neocloud low end still $1.49/GPU-hr (Vast.ai), typical price holds near $3.35/GPU-hr (AIMultiple, GetDeploying). The hyperscaler ceiling shifted to Azure's ND96isr H100 v5 (~$12.29/GPU-hr, $98.32/hr ÷ 8 GPUs), overtaking Google Cloud's a3-highgpu-8g (~$11.06/GPU-hr, unchanged). Per SemiAnalysis, 1-year contract rates hold around $2.35/GPU-hr after their spring-2026 rebound."
+    "en": "Widest rental market (48+ providers): marketplace/neocloud low end still $1.49/GPU-hr (Vast.ai), typical price eased to ~$3.30/GPU-hr (AIMultiple reads closer to $3.15) as more budget-tier PCIe capacity (Thunder Compute ~$2.19) entered the pool. The hyperscaler ceiling holds near Azure's ND96isr H100 v5 at ~$11.06/GPU-hr. Per SemiAnalysis, 1-year contract rates were around $2.35/GPU-hr as of spring 2026; the firm's own shortage commentary points to continued month-on-month increases on the reserved side, though no fresher published number has surfaced."
    },
    "sources": [
     {
@@ -138,8 +138,12 @@
      "url": "https://getdeploying.com/gpus/nvidia-h100"
     },
     {
+     "label": "ComputePrices — H100 GPU price",
+     "url": "https://computeprices.com/gpus/h100"
+    },
+    {
      "label": "Thunder Compute — H100 pricing",
-     "url": "https://www.thundercompute.com/blog/nvidia-h100-pricing"
+     "url": "https://www.thundercompute.com/guides/nvidia-h100-pricing"
     },
     {
      "label": "AIMultiple — GPU cloud price index",
@@ -160,12 +164,12 @@
    "vramGb": 192,
    "onDemandUsdHr": {
     "min": 1.71,
-    "median": 3,
+    "median": 3.2,
     "max": 6
    },
-   "contract1yUsdHr": 1.82,
+   "contract1yUsdHr": 1.91,
    "note": {
-    "en": "Aggressively priced for its 192GB of HBM3: TensorWave anchors the low end at ~$1.71/GPU-hr, while Azure/Oracle's 8x on-demand list price tops the range at $6.00/GPU-hr (revised down from a previously tracked $7.86 after checking Azure's own pricing page directly). Cyfuture AI publishes a 12-month reserved rate of $1.82/GPU-hr; prices trending down as MI355X arrives."
+    "en": "Aggressively priced for its 192GB of HBM3: TensorWave anchors the low end at ~$1.71/GPU-hr, while Azure/Oracle's 8x on-demand list price tops the range at $6.00/GPU-hr. Typical pricing cooled to ~$3.20/GPU-hr as mid-tier providers (Crusoe, Hot Aisle) came in below the prior median. DigitalOcean now publishes a clean 12-month reserved rate of $1.91/GPU-hr (26% off its $2.59 on-demand rate), effective Aug 2026."
    },
    "sources": [
     {
@@ -174,11 +178,11 @@
     },
     {
      "label": "Thunder Compute — MI300X pricing",
-     "url": "https://www.thundercompute.com/blog/amd-mi300x-pricing"
+     "url": "https://www.thundercompute.com/guides/amd-mi300x-pricing"
     },
     {
-     "label": "Spheron — MI300X/MI355X pricing 2026",
-     "url": "https://www.spheron.network/blog/amd-mi300x-mi355x-pricing-2026/"
+     "label": "DigitalOcean — GPU Droplets pricing",
+     "url": "https://www.digitalocean.com/pricing/gpu-droplets"
     },
     {
      "label": "cloudprice.net — Azure ND96isr MI300X v5",
@@ -191,17 +195,17 @@
    "vramGb": 80,
    "onDemandUsdHr": {
     "min": 1.09,
-    "median": 1.85,
+    "median": 1.8,
     "max": 5.07
    },
-   "contract1yUsdHr": null,
+   "contract1yUsdHr": 1.59,
    "note": {
-    "en": "Legacy workhorse in steady decline: Thunder Compute now undercuts the field at ~$1.09/GPU-hr, RunPod/Lambda cluster at $1.39-2.79, with GCP a2-ultragpu still listing ~$5.07/GPU-hr at the top. No widely published 1-year rate; most contract demand has moved to H100/H200."
+    "en": "Legacy workhorse in steady decline: Thunder Compute now undercuts the field at ~$1.09/GPU-hr, RunPod/Lambda cluster at $1.39-2.79, with GCP a2-ultragpu still listing ~$5.07/GPU-hr at the top. GetDeploying's tracked median has ticked up only slightly to ~$1.76-1.80/GPU-hr. Civo now publishes a clean tiered 80GB rate card — $1.79 on-demand, $1.59 at 12 months, down to $1.39 at 36 months — the first widely visible 1-year reference rate for this GPU; most other contract demand has moved to H100/H200."
    },
    "sources": [
     {
      "label": "Thunder Compute — A100 pricing",
-     "url": "https://www.thundercompute.com/blog/nvidia-a100-pricing"
+     "url": "https://www.thundercompute.com/guides/nvidia-a100-pricing"
     },
     {
      "label": "AIMultiple — GPU cloud price index",
@@ -210,6 +214,10 @@
     {
      "label": "RunPod pricing",
      "url": "https://www.runpod.io/pricing"
+    },
+    {
+     "label": "Civo — NVIDIA A100 GPU cloud pricing",
+     "url": "https://www.civo.com/cloud-gpu/nvidia-a100-gpu"
     }
    ]
   },
@@ -217,13 +225,13 @@
    "model": "NVIDIA L40S (48GB)",
    "vramGb": 48,
    "onDemandUsdHr": {
-    "min": 0.47,
-    "median": 1.27,
+    "min": 0.38,
+    "median": 0.9,
     "max": 3.5
    },
-   "contract1yUsdHr": null,
+   "contract1yUsdHr": 1.09,
    "note": {
-    "en": "TensorDock now anchors the low end at ~$0.47/GPU-hr (Verda's own listed rate has since risen well above this). Typical pricing has drifted down to ~$1.27/GPU-hr as more budget-tier neocloud listings (Packet AI, GPU Outlet, Beam, Latitude.sh, all $0.54-0.90) entered the tracked market, and the hyperscaler ceiling holds at Oracle Cloud's ~$3.50/GPU-hr. No standard published 1-year rates."
+    "en": "Floor dropped further: Lium.io now lists the cheapest tracked rate at ~$0.38/GPU-hr (Des Moines), below TensorDock's prior $0.47 anchor. Typical pricing eased to ~$0.90/GPU-hr as budget-tier neocloud listings (Omega Gradient, GPU Outlet, Packet AI, all $0.47-0.54) cluster below the old median, and the hyperscaler ceiling holds at Oracle Cloud's ~$3.50/GPU-hr. Civo now publishes a tiered rate card — $1.29 on-demand down to $1.09 at 12 months and $0.89 at 36 months."
    },
    "sources": [
     {
@@ -239,8 +247,8 @@
      "url": "https://computeprices.com/gpus/l40s"
     },
     {
-     "label": "GPUperHour — L40S rental pricing",
-     "url": "https://gpuperhour.com/rent/l40s"
+     "label": "Civo — NVIDIA L40S GPU cloud pricing",
+     "url": "https://www.civo.com/ai/l40s-gpu"
     }
    ]
   },
@@ -248,18 +256,22 @@
    "model": "NVIDIA RTX 5090 (32GB)",
    "vramGb": 32,
    "onDemandUsdHr": {
-    "min": 0.27,
-    "median": 0.56,
+    "min": 0.25,
+    "median": 0.6,
     "max": 0.99
    },
    "contract1yUsdHr": null,
    "note": {
-    "en": "Consumer flagship on marketplaces only (no hyperscaler offering): Salad Cloud now the floor at ~$0.27/GPU-hr, RunPod Secure Cloud unchanged at $0.99 the published top. Typical pricing (AIMultiple) ticked up slightly to ~$0.56/GPU-hr. Supply growing through 2026, pushing prices toward RTX 4090 levels."
+    "en": "Consumer flagship on marketplaces only (no hyperscaler offering): Salad Cloud still floors the market at ~$0.25/GPU-hr, RunPod Secure Cloud unchanged at $0.99 the published top. Typical pricing has actually ticked up to ~$0.55-0.66/GPU-hr (ComputePrices, AIMultiple) as more mainstream providers (RunPod, Sesterce, GPU Outlet) list capacity at $0.68-0.84 rather than at marketplace-floor rates — reversing the prior drift toward RTX 4090 levels even as the low end holds flat."
    },
    "sources": [
     {
      "label": "GetDeploying — cloud GPU reference",
      "url": "https://getdeploying.com/reference/cloud-gpu"
+    },
+    {
+     "label": "ComputePrices — RTX 5090 GPU price",
+     "url": "https://computeprices.com/gpus/rtx5090"
     },
     {
      "label": "Vast.ai — RTX 5090 pricing",
@@ -276,12 +288,12 @@
    "vramGb": 24,
    "onDemandUsdHr": {
     "min": 0.13,
-    "median": 0.48,
+    "median": 0.44,
     "max": 1.61
    },
    "contract1yUsdHr": null,
    "note": {
-    "en": "Vast.ai's marketplace floor has slipped further to ~$0.13/GPU-hr (from ~$0.18-0.20), while serverless-billed providers keep the ceiling near $1.61/GPU-hr (GetDeploying/AIMultiple aggregate) as Beam-style endpoint configs list up to $1.77/GPU-hr. Typical pricing holds steady around $0.48/GPU-hr — RunPod Secure Cloud's $0.69 remains well off the tracked reference points on either side."
+    "en": "Vast.ai's marketplace floor holds at ~$0.13/GPU-hr, while serverless-billed providers keep the ceiling near $1.61/GPU-hr (GetDeploying/AIMultiple aggregate) as Beam-style endpoint configs list up to $1.77/GPU-hr. Typical pricing has eased to ~$0.44/GPU-hr, down from ~$0.60/GPU-hr a year ago — RunPod Secure Cloud's $0.69 remains well off the tracked reference points on either side."
    },
    "sources": [
     {
@@ -298,7 +310,7 @@
     },
     {
      "label": "Beam — RTX 4090 pricing",
-     "url": "https://www.beam.cloud/blog/rtx-4090-price"
+     "url": "https://www.beam.cloud/guides/rtx-4090-price"
     }
    ]
   }
