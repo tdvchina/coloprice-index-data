@@ -2,14 +2,14 @@
  "name": "Coloprice BESS Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-08-17",
+ "updated": "2026-08-28",
  "benchmarks": {
   "china_tender_avg_4h_usd_kwh": 75,
   "china_tender_avg_2h_usd_kwh": 84,
   "fob_china_europe_usd_kwh": "71–89",
   "bnef_global_turnkey_usd_kwh": 117,
   "us_epc_installed_usd_kwh": "230–320",
-  "note": "China H1 2026 tender averages per CNESA (4h RMB 541.3/kWh, 2h RMB 602.1/kWh — first year-on-year price rebound after the anti-involution measures); FOB-China 5MWh DC-block benchmark for Europe per SMM (June 2026); global turnkey average per BNEF (2025); US installed EPC range reflects domestic-content rules and tariffs. Cost driver in 2026: China's export VAT rebate cut 13%→6% (abolished 2027) and 314Ah cell prices up to RMB 0.325–0.355/Wh."
+  "note": "China H1 2026 tender averages per CNESA (4h RMB 541.3/kWh, 2h RMB 602.1/kWh — first year-on-year price rebound after the anti-involution measures, still the latest published CNESA tender round as of late August); FOB-China 5MWh DC-block benchmark for Europe per SMM (June 2026); global turnkey average per BNEF's 2025 annual cost survey (next edition not yet out). US installed EPC range reflects domestic-content rules and tariffs. Cost driver in 2026: China's export VAT rebate cut 13%→6% (abolished 2027) and 314Ah cell prices climbing further to RMB 0.335–0.395/Wh as of April 2026, with some quotes approaching RMB 0.4/Wh."
  },
  "systems": [
   {
