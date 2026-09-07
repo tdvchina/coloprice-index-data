@@ -2,14 +2,14 @@
  "name": "Coloprice BESS Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-08-28",
+ "updated": "2026-09-02",
  "benchmarks": {
   "china_tender_avg_4h_usd_kwh": 75,
   "china_tender_avg_2h_usd_kwh": 84,
   "fob_china_europe_usd_kwh": "71–89",
   "bnef_global_turnkey_usd_kwh": 117,
   "us_epc_installed_usd_kwh": "230–320",
-  "note": "China H1 2026 tender averages per CNESA (4h RMB 541.3/kWh, 2h RMB 602.1/kWh — first year-on-year price rebound after the anti-involution measures, still the latest published CNESA tender round as of late August); FOB-China 5MWh DC-block benchmark for Europe per SMM (June 2026); global turnkey average per BNEF's 2025 annual cost survey (next edition not yet out). US installed EPC range reflects domestic-content rules and tariffs. Cost driver in 2026: China's export VAT rebate cut 13%→6% (abolished 2027) and 314Ah cell prices climbing further to RMB 0.335–0.395/Wh as of April 2026, with some quotes approaching RMB 0.4/Wh."
+  "note": "China H1 2026 tender averages per CNESA (4h RMB 541.3/kWh, 2h RMB 602.1/kWh — first year-on-year price rebound after the anti-involution measures, still the latest published CNESA tender round as of early September); FOB-China 5MWh DC-block benchmark for Europe per SMM (June 2026, still the latest published figure); global turnkey average per BNEF's 2025 annual cost survey (next edition not yet out). US installed EPC range reflects domestic-content rules and tariffs. Cost driver in 2026: China's export VAT rebate on batteries cut 9%→6% in April 2026 (full phase-out to 0% by January 2027) and 314Ah cell prices climbing more than 20% over six months to RMB 0.335–0.395/Wh as of April 2026, with some quotes approaching RMB 0.4/Wh."
  },
  "systems": [
   {
@@ -26,7 +26,7 @@
    "cycle_life": null,
    "source_name": "PR Newswire (Narada)",
    "source_url": "https://tools.prnewswire.com/en-us/live/20823/release/20250702EN22919",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "narada-center-l-ultra"
   },
   {
@@ -43,7 +43,7 @@
    "cycle_life": null,
    "source_name": "ESS News",
    "source_url": "https://www.ess-news.com/2026/02/12/worlds-first-628ah-grid-scale-battery-enters-operation/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "eve-mr-giant-s556h201"
   },
   {
@@ -60,7 +60,7 @@
    "cycle_life": null,
    "source_name": "Hithium",
    "source_url": "https://en.hithium.com/newsroom/latest/details/60.html",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "hithium-power-6-25mwh"
   },
   {
@@ -77,7 +77,7 @@
    "cycle_life": null,
    "source_name": "CnEVPost / CNESA",
    "source_url": "https://cnevpost.com/2024/04/11/byd-launches-energy-storage-mc-cube-t/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "byd-mc-cube-t"
   },
   {
@@ -94,7 +94,7 @@
    "cycle_life": 15000,
    "source_name": "Energy-Storage.News",
    "source_url": "https://www.energy-storage.news/industry-updates/trina-storage-launches-elementa-2-pro-energy-storage-solution/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "trina-elementa-2-pro"
   },
   {
@@ -111,7 +111,7 @@
    "cycle_life": 16000,
    "source_name": "ESS News",
    "source_url": "https://www.ess-news.com/2024/09/06/envision-pushes-energy-storage-density-to-new-highs-with-8-mwh-20-foot-container/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "envision-gen-8-scalable-platform"
   },
   {
@@ -128,7 +128,7 @@
    "cycle_life": null,
    "source_name": "CATL / CNESA H1 2026 tender data",
    "source_url": "https://www.catl.com/en/news/6232.html",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "catl-tener"
   },
   {
@@ -145,7 +145,7 @@
    "cycle_life": null,
    "source_name": "Huawei FusionSolar",
    "source_url": "https://solar.huawei.com/en/products/luna2000-7-14-21-s1/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "huawei-luna2000-4472-2s"
   },
   {
@@ -162,7 +162,7 @@
    "cycle_life": null,
    "source_name": "Sungrow / ENF Solar datasheet",
    "source_url": "https://www.enfsolar.com/pv/storage-system-datasheet/13165",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "sungrow-powertitan-2-0"
   },
   {
@@ -179,7 +179,7 @@
    "cycle_life": null,
    "source_name": "ESS News",
    "source_url": "https://www.ess-news.com/2026/06/30/sunwoda-launches-next-generation-588ah-based-ess-platform-at-ees-europe-2026-and-announces-safety-and-eu-compliance-milestones/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "sunwoda-noahx-3-0"
   },
   {
@@ -196,7 +196,7 @@
    "cycle_life": null,
    "source_name": "Hithium / Energy-Storage.News (SNEC 2026)",
    "source_url": "https://www.hithium.com/newsroom/latest/details/339.html",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "hithium-power-6-9mwh-8h"
   },
   {
@@ -213,7 +213,7 @@
    "cycle_life": 15000,
    "source_name": "ESS News",
    "source_url": "https://www.ess-news.com/2026/04/09/envision-launches-12-5-mwh-ai-storage-system-starts-production-of-790-ah-lfp-cell/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "envision-en-12-5mwh-ai-ess"
   },
   {
@@ -230,7 +230,7 @@
    "cycle_life": 10000,
    "source_name": "PR Newswire (EVE Energy)",
    "source_url": "https://www.prnewswire.com/apac/news-releases/eve-energy-launches-6-9mwh-bess-globally-signs-over-50gwh-in-large-format-battery-deals-302735641.html",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "eve-s6900-6-9mwh"
   },
   {
@@ -247,7 +247,7 @@
    "cycle_life": null,
    "source_name": "Tesla configurator via pv magazine USA",
    "source_url": "https://pv-magazine-usa.com/2024/07/03/tesla-battery-deployment-up-157-megapack-pricing-down-44/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "tesla-megapack-2-xl"
   },
   {
@@ -264,7 +264,7 @@
    "cycle_life": null,
    "source_name": "Electrek",
    "source_url": "https://electrek.co/2026/08/06/tesla-megapack-3-production-starts-texas/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "tesla-megapack-3"
   },
   {
@@ -281,7 +281,7 @@
    "cycle_life": null,
    "source_name": "Samsung SDI / ESS News",
    "source_url": "https://www.ess-news.com/2025/06/04/tesvolt-samsung-announce-5-26-mwh-containerized-battery/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "samsung-sdi-sbb-1-5"
   },
   {
@@ -298,7 +298,7 @@
    "cycle_life": null,
    "source_name": "pv magazine / Fluence",
    "source_url": "https://www.pv-magazine.com/2025/02/14/fluence-launches-highly-modular-7-5-mwh-ac-based-bess-platform/",
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "catalogSlug": "fluence-smartstack"
   }
  ]

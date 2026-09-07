@@ -2,7 +2,7 @@
  "name": "The Colocation Price Index — market benchmarks",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-08-03",
+ "updated": "2026-09-01",
  "period": "H2 2025 – Q2 2026",
  "markets": [
   {
@@ -30,12 +30,16 @@
     "ru": "Северная Вирджиния (Ашберн)",
     "uk": "Північна Вірджинія (Ашберн)"
    },
-   "wholesaleUsdKwMo": 215,
+   "wholesaleUsdKwMo": 173,
+   "wholesaleRange": [
+    160,
+    185
+   ],
    "retailRackUsdMo": null,
-   "yoyPct": 19,
+   "yoyPct": 1.5,
    "source": {
-    "label": "CBRE, H2 2025 (10MW+ blocks)",
-    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h2-2025"
+    "label": "CBRE, North America Data Center Trends H1 2026 (10MW+ blocks)",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
    }
   },
   {
