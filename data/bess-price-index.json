@@ -2,7 +2,7 @@
  "name": "Coloprice BESS Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-09-14",
+ "updated": "2026-09-18",
  "benchmarks": {
   "china_tender_avg_4h_usd_kwh": 83,
   "china_tender_avg_2h_usd_kwh": 104,
@@ -79,6 +79,22 @@
    "source_url": "https://cnevpost.com/2024/04/11/byd-launches-energy-storage-mc-cube-t/",
    "as_of": "2026-09",
    "catalogSlug": "byd-mc-cube-t"
+  },
+  {
+   "slug": "byd-gc-block-62mwh",
+   "model": "GC Block (10MW/62MWh, ~6h)",
+   "maker": "BYD",
+   "country": "China",
+   "capacity_mwh": 62,
+   "price_usd_per_kwh_min": null,
+   "price_usd_per_kwh_max": null,
+   "price_note": "No published price — BYD has not disclosed pricing for this station-level block, launched 16 September 2026 at the Shenzhen International Digital Energy Exhibition. Important: GC Block is an AC block built on the MC CubeXT DC system (1980Ah Blade Battery cells) with BYD's own GC Flux PCS 2.0 (10MW/unit, 99.5% peak conversion efficiency) integrated in, so it is not comparable to ex-works China DC-container prices ($71–89/kWh FOB for Europe, SMM) — the same caveat as Sungrow's PowerTitan 2.0 and Gotion's Grid Gen2 AC blocks, which carry a premium for built-in PCS. Three standardized configurations were announced: 7.5MW/15.5MWh (~2h), 7.5MW/31MWh (~4h) and this 10MW/62MWh (~6h) flagship, the largest standardized block announced to date.",
+   "availability": "enterprise-only",
+   "chemistry": "LFP (Blade, 1980Ah)",
+   "cycle_life": null,
+   "source_name": "pv magazine / ESS News",
+   "source_url": "https://www.pv-magazine.com/2026/09/16/byd-launches-62-mwh-gc-block-for-gigawatt-scale-battery-storage-plants/",
+   "as_of": "2026-09"
   },
   {
    "slug": "trina-elementa-2-pro",

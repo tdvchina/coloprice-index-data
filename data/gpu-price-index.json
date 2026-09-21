@@ -2,7 +2,7 @@
  "name": "Coloprice GPU Rental Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-09-14",
+ "updated": "2026-09-21",
  "gpus": [
   {
    "model": "NVIDIA GB200 (per GPU, NVL72)",
@@ -70,26 +70,26 @@
    "model": "AMD MI355X (288GB)",
    "vramGb": 288,
    "onDemandUsdHr": {
-    "min": 7.1,
-    "median": 7.5,
+    "min": 5.99,
+    "median": 7,
     "max": 8.6
    },
    "contract1yUsdHr": 4.25,
    "note": {
-    "en": "Reclassified the floor: Vultr's own preemptible-instances announcement and Spheron's pricing breakdown both confirm today that Vultr's ~$2.59/GPU-hr rate is a preemptible/spot SKU, not on-demand ('preemptible instances give customers... even lower cost' than Vultr's own on-demand line) — so it no longer qualifies as the on-demand floor. True on-demand pricing clusters at OVHcloud/Vultr on-demand ~$7.10/GPU-hr and CoreWeave ~$7.20/GPU-hr, with Oracle bare-metal still the ceiling at $8.60/GPU-hr (the only rate Spheron calls 'verified true on-demand'). CoreWeave's $4.25/GPU-hr 1-year reservation remains the only published contract rate for this SKU. Coverage is still thin (4 tracked providers); watch for a first-party Vultr on-demand rate card to pin this down further."
+    "en": "New floor: Daytona now lists MI355X on-demand at $5.99/GPU-hr (confirmed on Daytona's own pricing page today, distinct from its $3.44/GPU-hr preemptible tier) — a ~16% drop from the prior $7.10 floor and the first sub-$7 confirmed on-demand rate for this SKU. DigitalOcean also added MI355X this cycle, but only as a spot SKU at $4.50/GPU-hr, so it doesn't count as on-demand. Typical pricing eases to ~$7.00/GPU-hr as the new floor pulls the cluster down, with OVHcloud/Vultr on-demand ~$7.10 and CoreWeave ~$7.20 still anchoring the middle. Oracle bare-metal remains the ceiling at $8.60/GPU-hr. CoreWeave's $4.25/GPU-hr 1-year reservation remains the only published contract rate for this SKU."
    },
    "sources": [
     {
-     "label": "GetDeploying — MI355X price comparison",
-     "url": "https://getdeploying.com/gpus/amd-mi355x"
+     "label": "Daytona pricing",
+     "url": "https://www.daytona.io/pricing"
+    },
+    {
+     "label": "ComputePrices — MI355X price comparison",
+     "url": "https://computeprices.com/gpus/mi355x"
     },
     {
      "label": "Spheron — AMD MI300X & MI355X pricing 2026",
      "url": "https://www.spheron.network/blog/amd-mi300x-mi355x-pricing-2026/"
-    },
-    {
-     "label": "Vultr blog — AMD Instinct GPU preemptible instances",
-     "url": "https://blogs.vultr.com/amd-gpu-preemptible"
     },
     {
      "label": "CoreWeave pricing",
@@ -101,13 +101,13 @@
    "model": "NVIDIA H200 (141GB)",
    "vramGb": 141,
    "onDemandUsdHr": {
-    "min": 2.3,
+    "min": 2.09,
     "median": 4.4,
     "max": 13.78
    },
-   "contract1yUsdHr": 3.72,
+   "contract1yUsdHr": 3.4,
    "note": {
-    "en": "Min from FluidStack ($2.30/GPU-hr, re-confirmed on their own pricing page today). Typical price drifted back up to ~$4.40/GPU-hr (GetDeploying's tracked median as of Sept 6, flat over the trailing 90 days) from last cycle's $4.30 read, as cheap capacity (GMI Cloud $2.60, Jarvislabs $3.99 on-demand/$1.99 spot) is offset by mid-tier providers (Hyperbolic, Crusoe, DigitalOcean, Nebius) clustering $4.0-4.6. Hyperscaler ceiling unchanged: Azure's ND96isr H200 v5 still prices at $110.24/hr for 8 GPUs = $13.78/GPU-hr — no reserved SKU exists for that instance. Reserved-rate listings still average ~$3.72/GPU-hr."
+    "en": "Floor moves to Beam's serverless H200 rate of $2.09/GPU-hr (confirmed live on Beam's own pricing page today) — FluidStack's prior $2.30 floor could not be re-verified this cycle: FluidStack no longer has a discoverable public on-demand price page and appears to be sales-quote only, so it drops out of the floor. Typical price holds at ~$4.40/GPU-hr (GetDeploying's tracked median, re-confirmed today), with cheap capacity (GMI Cloud $2.60, Jarvislabs $3.99 on-demand/$1.99 spot) offset by mid-tier providers (Hyperbolic, Crusoe, DigitalOcean, Nebius) clustering $4.0-4.6. Hyperscaler ceiling unchanged: Azure's ND96isr H200 v5 still prices at $110.24/hr for 8 GPUs = $13.78/GPU-hr — no reserved SKU exists for that instance. The prior unsourced ~$3.72 reserved-rate estimate is replaced by a concrete figure: DigitalOcean's published 12-month reserved rate of $3.40/GPU-hr (confirmed live today)."
    },
    "sources": [
     {
@@ -115,16 +115,16 @@
      "url": "https://getdeploying.com/gpus/nvidia-h200"
     },
     {
-     "label": "Jarvislabs — H200 price guide",
-     "url": "https://jarvislabs.ai/blog/h200-price"
-    },
-    {
      "label": "Vantage — Azure ND96isr H200 v5 instance pricing",
      "url": "https://instances.vantage.sh/azure/vm/nd96isrh200-v5"
     },
     {
-     "label": "AIMultiple — GPU cloud price index",
-     "url": "https://aimultiple.com/gpu-index"
+     "label": "Beam — pricing",
+     "url": "https://www.beam.cloud/pricing"
+    },
+    {
+     "label": "DigitalOcean — GPU Droplets pricing",
+     "url": "https://www.digitalocean.com/pricing/gpu-droplets"
     }
    ]
   },
@@ -136,18 +136,14 @@
     "median": 3.29,
     "max": 12.29
    },
-   "contract1yUsdHr": 2.35,
+   "contract1yUsdHr": 3.26,
    "note": {
-    "en": "Floor drops: Lium.io's H100 80GB HBM3 pool is confirmed live today with 27 GPUs in stock at $1.30-$2.75/GPU-hr, and GetDeploying's verified-in-stock tracker separately flags Lium at ~$1.55/GPU-hr (Sept 9 read) — both below the prior Vast.ai floor of $1.73/GPU-hr, so the floor moves to Lium's $1.30. Typical price eased slightly to ~$3.29/GPU-hr (down from $3.39) as this cheaper Lium/Verda/Latitude.sh/Gcore/Cudo Compute cluster ($1.3-1.8/GPU-hr, all re-confirmed today) broadens the low end, while budget PCIe capacity (Vultr ~$2.99, Hyperbolic ~$3.19, Thunder Compute ~$3.20, re-confirmed) still clusters just below the median. Hyperscaler ceiling unchanged via Vantage at Azure's ND96isr H100 v5, $98.32/hr ÷ 8 GPUs = $12.29/GPU-hr (re-confirmed today), still above AWS (~$6.88) and Google Cloud (~$10.98) list prices. Per SemiAnalysis, 1-year contract rates were around $2.35/GPU-hr as of spring 2026 (not reconfirmed this cycle)."
+    "en": "Floor drops: Lium.io's H100 80GB HBM3 pool is confirmed live today with 27 GPUs in stock at $1.30-$2.75/GPU-hr, and GetDeploying's verified-in-stock tracker separately flags Lium at ~$1.55/GPU-hr (Sept 9 read) — both below the prior Vast.ai floor of $1.73/GPU-hr, so the floor moves to Lium's $1.30. Typical price eased slightly to ~$3.29/GPU-hr (down from $3.39) as this cheaper Lium/Verda/Latitude.sh/Gcore/Cudo Compute cluster ($1.3-1.8/GPU-hr, all re-confirmed today) broadens the low end, while budget PCIe capacity (Vultr ~$2.99, Hyperbolic ~$3.19, Thunder Compute ~$3.20, re-confirmed) still clusters just below the median. Hyperscaler ceiling unchanged via Vantage at Azure's ND96isr H100 v5, $98.32/hr ÷ 8 GPUs = $12.29/GPU-hr (re-confirmed today), still above AWS (~$6.88) and Google Cloud (~$10.98) list prices. SemiAnalysis's spring-2026 $2.35/GPU-hr contract estimate could not be reconfirmed this cycle; it's replaced with a concrete, freshly-verified figure: DigitalOcean's published 12-month reserved rate of $3.26/GPU-hr (confirmed live on DO's own pricing page today)."
    },
    "sources": [
     {
      "label": "GetDeploying — H100 price comparison",
      "url": "https://getdeploying.com/gpus/nvidia-h100"
-    },
-    {
-     "label": "Thunder Compute — H100 pricing",
-     "url": "https://www.thundercompute.com/blog/nvidia-h100-pricing"
     },
     {
      "label": "Vantage — Azure ND96isr H100 v5 instance pricing",
@@ -156,6 +152,10 @@
     {
      "label": "Lium.io pricing",
      "url": "https://www.lium.io/pricing"
+    },
+    {
+     "label": "DigitalOcean — GPU Droplets pricing",
+     "url": "https://www.digitalocean.com/pricing/gpu-droplets"
     }
    ]
   },
@@ -229,9 +229,9 @@
     "median": 1.53,
     "max": 3.77
    },
-   "contract1yUsdHr": 0.89,
+   "contract1yUsdHr": 1.09,
    "note": {
-    "en": "Floor moves back: Lium.io's L40S pool is confirmed live and in stock again today (14 pods, 38 GPUs available) at $0.38-$0.75/GPU-hr, so the floor returns to $0.38/GPU-hr, undercutting GPU Outlet's $0.47/GPU-hr. Typical pricing holds at ~$1.53/GPU-hr — GetDeploying's tracked median is independently re-confirmed today at the same level (up ~19% since August 2025), so last cycle's jump was not a fluke; Runpod (~$0.79), gpu.ai/Vast.ai (~$0.80) and CoreWeave (~$0.99) still cluster below it. Ceiling holds near $3.5-3.8/GPU-hr (AWS us-east-1 8x config at $3.77; Oracle bare-metal at $3.50). Civo's rate card is unchanged and re-confirmed: $1.29 on-demand, $0.89 at 36 months."
+    "en": "Floor holds at $0.38/GPU-hr (Lium.io, re-confirmed today via ComputePrices' live tracker) — note Lium's own pricing page currently marks its lower $0.35/GPU-hr rate as 'reference price, unavailable' with no pods in stock right now, so $0.38 remains the operative floor rather than $0.35. Typical pricing holds at ~$1.53/GPU-hr — GetDeploying's tracked median reads flat (~$1.50) on a fresh check, no change; Runpod (~$0.79), gpu.ai/Vast.ai (~$0.80) and CoreWeave (~$0.99) still cluster below it. Ceiling holds near $3.5-3.8/GPU-hr (AWS us-east-1 8x config at $3.77; Oracle bare-metal at $3.50). Correction: the contract figure was previously sourced to Civo's 36-month tier ($0.89); Civo's full rate card, re-confirmed live today, is $1.29 on-demand → $1.19 at 6 months → $1.09 at 12 months → $0.99 at 24 months → $0.89 at 36 months, so the 1-year field now correctly uses the 12-month rate of $1.09."
    },
    "sources": [
     {
@@ -257,29 +257,29 @@
    "vramGb": 32,
    "onDemandUsdHr": {
     "min": 0.25,
-    "median": 0.54,
+    "median": 0.67,
     "max": 1.09
    },
    "contract1yUsdHr": null,
    "note": {
-    "en": "Consumer flagship on marketplaces only (no hyperscaler offering): Salad Cloud still floors the market at ~$0.25/GPU-hr, unchanged since launch and re-confirmed today. Ceiling unchanged: Beam's serverless rate ($1.09/GPU-hr, re-confirmed on Beam's own pricing page) remains the priciest widely-published on-demand option — Beam's own on-demand (non-serverless) tier now lists from ~$0.72/GPU-hr, well below its serverless ceiling. Median eased further to ~$0.54/GPU-hr (AIMultiple's tracked median, down from $0.59 last cycle) as cheap marketplace capacity keeps expanding."
+    "en": "Consumer flagship on marketplaces only (no hyperscaler offering): Salad Cloud still floors the market at ~$0.25/GPU-hr, unchanged since launch and re-confirmed today via ComputePrices. Median edges up further to ~$0.67/GPU-hr (ComputePrices' live tracker today, corroborating GetDeploying's own read) from last cycle's $0.65 — a modest continuation of the demand-tightening trend flagged last cycle, not a new spike. Ceiling unchanged: Beam's serverless rate ($1.09/GPU-hr, re-confirmed on Beam's own pricing page today) remains the priciest widely-published on-demand option — Beam's own on-demand (non-serverless) tier still lists from ~$0.72/GPU-hr, well below its serverless ceiling."
    },
    "sources": [
     {
-     "label": "GetDeploying — cloud GPU reference",
-     "url": "https://getdeploying.com/reference/cloud-gpu"
+     "label": "GetDeploying — RTX 5090 price comparison",
+     "url": "https://getdeploying.com/gpus/nvidia-rtx-5090"
     },
     {
-     "label": "ComputePrices — RTX 5090 GPU price",
-     "url": "https://computeprices.com/gpus/rtx5090"
+     "label": "Vast.ai — RTX 5090 pricing",
+     "url": "https://vast.ai/pricing/gpu/RTX-5090"
     },
     {
      "label": "Beam — pricing",
      "url": "https://www.beam.cloud/pricing"
     },
     {
-     "label": "RunPod pricing",
-     "url": "https://www.runpod.io/pricing"
+     "label": "ComputePrices — RTX 5090 price comparison",
+     "url": "https://computeprices.com/gpus/rtx5090"
     }
    ]
   },
@@ -289,11 +289,11 @@
    "onDemandUsdHr": {
     "min": 0.13,
     "median": 0.42,
-    "max": 1.61
+    "max": 0.74
    },
    "contract1yUsdHr": 0.27,
    "note": {
-    "en": "Vast.ai's marketplace floor is holding near ~$0.13-0.14/GPU-hr — marketplace pricing is volatile and hour-to-hour reads vary. Serverless-billed providers keep the ceiling near $1.61/GPU-hr (Beam, re-confirmed by AIMultiple); trackers that exclude serverless configs read a lower ~$0.74-0.77 top, so the ceiling carries over pending a closer look. Typical pricing has eased slightly to ~$0.42/GPU-hr — down about 13% over the trailing 90 days per a fresh GetDeploying-based read (Sept 2), continuing a slow downward drift as Theta EdgeCloud, GPU.ai and Novita add cheap capacity. Novita's 12-month reserved rate of $0.27/GPU-hr remains the only contract figure tracked for this SKU."
+    "en": "Ceiling corrected: the prior $1.61/GPU-hr top traced to a Beam guide page that has since gone dead (404, checked today); Beam's live pricing page now shows RTX 4090 at $0.69/GPU-hr serverless and $0.44/GPU-hr on-demand, both well below the old figure. The highest confirmed on-demand rate today is RunPod's Secure Cloud tier at $0.74/GPU-hr (RunPod Community Cloud runs $0.34/GPU-hr), so the ceiling moves there — a correction, not a market move. Vast.ai's marketplace floor is holding near ~$0.13-0.14/GPU-hr — marketplace pricing is volatile and hour-to-hour reads vary. Typical pricing holds near ~$0.42/GPU-hr, continuing a slow downward drift as Theta EdgeCloud, GPU.ai and Novita add cheap capacity. Novita's 12-month reserved rate of $0.27/GPU-hr remains the only contract figure tracked for this SKU."
    },
    "sources": [
     {
@@ -301,16 +301,16 @@
      "url": "https://getdeploying.com/gpus/nvidia-rtx-4090"
     },
     {
-     "label": "RunPod pricing",
-     "url": "https://www.runpod.io/pricing"
+     "label": "RunPod — RTX 4090 pricing",
+     "url": "https://www.runpod.io/gpu-models/rtx-4090"
     },
     {
      "label": "Vast.ai live GPU pricing",
      "url": "https://vast.ai/pricing"
     },
     {
-     "label": "Beam — RTX 4090 pricing",
-     "url": "https://www.beam.cloud/guides/rtx-4090-price"
+     "label": "Beam — pricing",
+     "url": "https://www.beam.cloud/pricing"
     }
    ]
   }
