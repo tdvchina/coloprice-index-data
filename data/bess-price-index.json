@@ -2,14 +2,14 @@
  "name": "Coloprice BESS Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-09-18",
+ "updated": "2026-09-28",
  "benchmarks": {
   "china_tender_avg_4h_usd_kwh": 83,
   "china_tender_avg_2h_usd_kwh": 104,
   "fob_china_europe_usd_kwh": "71–89",
   "bnef_global_turnkey_usd_kwh": 117,
   "us_epc_installed_usd_kwh": "230–320",
-  "note": "China tender averages per CNESA DataLink: the H1 2026 semi-annual print was 4h RMB 541.3/kWh, 2h RMB 602.1/kWh, but the newer monthly print for August 2026 (published via EnergyTrend, 10 Sept 2026, on a record 76 GWh of awarded volume) shows a sharper rebound — weighted average winning-bid prices of RMB 600/kWh for 4-hour systems (range RMB 530–690/kWh, +21% month-on-month) and RMB 750/kWh for 2-hour systems (range RMB 580–930/kWh, +34% month-on-month); the headline figures above use this latest August print (≈$83/$104 at prevailing RMB/USD). FOB-China 5MWh DC-block benchmark for Europe per SMM (June 2026, still the latest published figure); global turnkey average per BNEF's 2025 annual cost survey (published Dec 2025; next edition not yet out). US installed EPC range reflects domestic-content rules and tariffs. Cost driver in 2026: China's export VAT rebate on batteries cut 9%→6% in April 2026 (full phase-out to 0% by January 2027), a new 2% consumption tax on lithium-ion batteries took effect 1 September 2026, and 314Ah cell prices have kept climbing — from RMB 0.26/Wh in early 2025 to roughly RMB 0.38/Wh by mid-2026, with top-tier quotes approaching RMB 0.4/Wh."
+  "note": "China tender averages per CNESA DataLink: the H1 2026 semi-annual print was 4h RMB 541.3/kWh, 2h RMB 602.1/kWh, and the monthly print for August 2026 (published via EnergyTrend, 10 Sept 2026, on a record 76 GWh of awarded volume, still the latest available as of 28 Sept 2026 — no September print out yet) showed a sharper rebound — weighted average winning-bid prices of RMB 600/kWh for 4-hour systems (range RMB 530–690/kWh, +21% month-on-month) and RMB 750/kWh for 2-hour systems (range RMB 580–930/kWh, +34% month-on-month); the headline figures above use this August print (≈$83/$104 at prevailing RMB/USD). FOB-China 5MWh DC-block benchmark for Europe per SMM (June 2026, still the latest published figure for that export series — SMM separately tracks a domestic ex-works 5MWh stack price, last read ~$58-66/kWh on 24 Sept 2026, but that's a distinct, lower price basis and not comparable to the FOB-for-Europe export figure). Global turnkey average per BNEF's 2025 annual cost survey (published Dec 2025; next edition not yet out). US installed EPC range reflects domestic-content rules and tariffs. Cost driver in 2026: China's export VAT rebate on batteries cut 9%→6% in April 2026 (full phase-out to 0% by January 2027), a new 2% consumption tax on lithium-ion batteries took effect 1 September 2026, and 314Ah cell prices have kept climbing — from RMB 0.26/Wh in early 2025 to roughly RMB 0.38/Wh by mid-2026, with top-tier quotes approaching RMB 0.4/Wh."
  },
  "systems": [
   {

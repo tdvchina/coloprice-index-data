@@ -2,7 +2,7 @@
  "name": "The Colocation Price Index — market benchmarks",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-09-01",
+ "updated": "2026-09-26",
  "period": "H2 2025 – Q2 2026",
  "markets": [
   {
@@ -77,6 +77,237 @@
     "url": null
    },
    "expected": "Q4 2026"
+  },
+  {
+   "slug": "chicago",
+   "name": {
+    "en": "Chicago",
+    "ru": "Чикаго",
+    "uk": "Чикаго"
+   },
+   "wholesaleUsdKwMo": 215,
+   "wholesaleRange": [
+    200,
+    230
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": 14.7,
+   "note": "250–500 kW requirement; midpoint of the published range",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "frankfurt",
+   "name": {
+    "en": "Frankfurt",
+    "ru": "Франкфурт",
+    "uk": "Франкфурт"
+   },
+   "wholesaleUsdKwMo": 250,
+   "wholesaleRange": [
+    235,
+    265
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement; midpoint of the published range",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "tokyo",
+   "name": {
+    "en": "Tokyo",
+    "ru": "Токио",
+    "uk": "Токіо"
+   },
+   "wholesaleUsdKwMo": 280,
+   "retailRackUsdMo": null,
+   "yoyPct": 0,
+   "note": "Published average; CBRE reports rents stable year over year",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "hong-kong",
+   "name": {
+    "en": "Hong Kong",
+    "ru": "Гонконг",
+    "uk": "Гонконг"
+   },
+   "wholesaleUsdKwMo": 295,
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "Q1 2026 average, up from $270 a year earlier",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "sydney",
+   "name": {
+    "en": "Sydney",
+    "ru": "Сидней",
+    "uk": "Сідней"
+   },
+   "wholesaleUsdKwMo": 188,
+   "retailRackUsdMo": null,
+   "yoyPct": 0,
+   "note": "Published average; CBRE reports rents stable year over year",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "queretaro",
+   "name": {
+    "en": "Querétaro",
+    "ru": "Керетаро",
+    "uk": "Керетаро"
+   },
+   "wholesaleUsdKwMo": 260,
+   "wholesaleRange": [
+    250,
+    270
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": 0,
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "santiago",
+   "name": {
+    "en": "Santiago",
+    "ru": "Сантьяго",
+    "uk": "Сантьяго"
+   },
+   "wholesaleUsdKwMo": 200,
+   "wholesaleRange": [
+    190,
+    210
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": 0,
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "bogota",
+   "name": {
+    "en": "Bogotá",
+    "ru": "Богота",
+    "uk": "Богота"
+   },
+   "wholesaleUsdKwMo": 190,
+   "wholesaleRange": [
+    150,
+    230
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": 0,
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "sao-paulo",
+   "name": {
+    "en": "São Paulo",
+    "ru": "Сан-Паулу",
+    "uk": "Сан-Паулу"
+   },
+   "wholesaleUsdKwMo": 160,
+   "wholesaleRange": [
+    130,
+    190
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": 0,
+   "note": "250–500 kW requirement; midpoint of the published range",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "london",
+   "name": {
+    "en": "London",
+    "ru": "Лондон",
+    "uk": "Лондон"
+   },
+   "wholesaleUsdKwMo": null,
+   "wholesaleRange": [
+    165,
+    265
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "collecting": true,
+   "expected": "Q4 2026",
+   "note": "CBRE publishes only the European range ($165–265/kW/mo) for London; no city average yet",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "amsterdam",
+   "name": {
+    "en": "Amsterdam",
+    "ru": "Амстердам",
+    "uk": "Амстердам"
+   },
+   "wholesaleUsdKwMo": null,
+   "wholesaleRange": [
+    165,
+    265
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "collecting": true,
+   "expected": "Q4 2026",
+   "note": "CBRE publishes only the European range ($165–265/kW/mo) for Amsterdam; no city average yet",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "paris",
+   "name": {
+    "en": "Paris",
+    "ru": "Париж",
+    "uk": "Париж"
+   },
+   "wholesaleUsdKwMo": null,
+   "wholesaleRange": [
+    165,
+    265
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "collecting": true,
+   "expected": "Q4 2026",
+   "note": "CBRE publishes only the European range ($165–265/kW/mo) for Paris; no city average yet",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
   }
  ],
  "notes": {
