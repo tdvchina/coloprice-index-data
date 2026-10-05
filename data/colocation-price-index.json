@@ -2,7 +2,7 @@
  "name": "The Colocation Price Index — market benchmarks",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-09-26",
+ "updated": "2026-10-01",
  "period": "H2 2025 – Q2 2026",
  "markets": [
   {
@@ -250,18 +250,16 @@
     "ru": "Лондон",
     "uk": "Лондон"
    },
-   "wholesaleUsdKwMo": null,
+   "wholesaleUsdKwMo": 213,
    "wholesaleRange": [
-    165,
-    265
+    195,
+    230
    ],
    "retailRackUsdMo": null,
    "yoyPct": null,
-   "collecting": true,
-   "expected": "Q4 2026",
-   "note": "CBRE publishes only the European range ($165–265/kW/mo) for London; no city average yet",
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE: rents in Europe’s four major markets rose year-over-year in Q1 2026",
    "source": {
-    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026), Fig. 5 — Q1 2026, 250–500 kW",
     "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
    }
   },
@@ -272,18 +270,16 @@
     "ru": "Амстердам",
     "uk": "Амстердам"
    },
-   "wholesaleUsdKwMo": null,
+   "wholesaleUsdKwMo": 180,
    "wholesaleRange": [
     165,
-    265
+    195
    ],
    "retailRackUsdMo": null,
    "yoyPct": null,
-   "collecting": true,
-   "expected": "Q4 2026",
-   "note": "CBRE publishes only the European range ($165–265/kW/mo) for Amsterdam; no city average yet",
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE: rents in Europe’s four major markets rose year-over-year in Q1 2026",
    "source": {
-    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026), Fig. 5 — Q1 2026, 250–500 kW",
     "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
    }
   },
@@ -294,19 +290,234 @@
     "ru": "Париж",
     "uk": "Париж"
    },
-   "wholesaleUsdKwMo": null,
+   "wholesaleUsdKwMo": 190,
+   "wholesaleRange": [
+    175,
+    205
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE: rents in Europe’s four major markets rose year-over-year in Q1 2026",
+   "source": {
+    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026), Fig. 5 — Q1 2026, 250–500 kW",
+    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+   }
+  },
+  {
+   "slug": "dallas",
+   "name": {
+    "en": "Dallas–Fort Worth",
+    "ru": "Даллас – Форт-Уэрт",
+    "uk": "Даллас – Форт-Верт"
+   },
+   "wholesaleUsdKwMo": 173,
+   "wholesaleRange": [
+    160,
+    185
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": 0,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE Global 2026: Q1 asking rents unchanged year-over-year",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 1 — 250–500 kW asking rates",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "houston",
+   "name": {
+    "en": "Houston",
+    "ru": "Хьюстон",
+    "uk": "Х’юстон"
+   },
+   "wholesaleUsdKwMo": 180,
    "wholesaleRange": [
     165,
-    265
+    195
    ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range (CBRE secondary-market table)",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 2 — secondary markets, 250–500 kW",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "los-angeles",
+   "name": {
+    "en": "Los Angeles (Southern California)",
+    "ru": "Лос-Анджелес (Южная Калифорния)",
+    "uk": "Лос-Анджелес (Південна Каліфорнія)"
+   },
+   "wholesaleUsdKwMo": 213,
+   "wholesaleRange": [
+    175,
+    250
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE reports the market as “Southern California”",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 2 — secondary markets, 250–500 kW",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "phoenix",
+   "name": {
+    "en": "Phoenix",
+    "ru": "Финикс",
+    "uk": "Фінікс"
+   },
+   "wholesaleUsdKwMo": 195,
+   "wholesaleRange": [
+    175,
+    215
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 1 — 250–500 kW asking rates",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "atlanta",
+   "name": {
+    "en": "Atlanta",
+    "ru": "Атланта",
+    "uk": "Атланта"
+   },
+   "wholesaleUsdKwMo": 193,
+   "wholesaleRange": [
+    185,
+    200
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": 2,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE Global 2026: Q1 asking rents +2% year-over-year",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 1 — 250–500 kW asking rates",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "silicon-valley",
+   "name": {
+    "en": "Silicon Valley",
+    "ru": "Кремниевая долина",
+    "uk": "Кремнієва долина"
+   },
+   "wholesaleUsdKwMo": 238,
+   "wholesaleRange": [
+    200,
+    275
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE: record-high rental rates on occupier demand",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 1 — 250–500 kW asking rates",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "hillsboro",
+   "name": {
+    "en": "Hillsboro (Portland)",
+    "ru": "Хилсборо (Портленд)",
+    "uk": "Гіллсборо (Портленд)"
+   },
+   "wholesaleUsdKwMo": 205,
+   "wholesaleRange": [
+    185,
+    225
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 1 — 250–500 kW asking rates",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "new-york",
+   "name": {
+    "en": "New York Tri-State",
+    "ru": "Нью-Йорк (Tri-State)",
+    "uk": "Нью-Йорк (Tri-State)"
+   },
+   "wholesaleUsdKwMo": 213,
+   "wholesaleRange": [
+    190,
+    235
+   ],
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "note": "250–500 kW requirement, N+1/Tier III; midpoint of the published asking-rate range; CBRE: “rates continue to climb”",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2026 (27 Aug 2026), Fig. 1 — 250–500 kW asking rates",
+    "url": "https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026"
+   }
+  },
+  {
+   "slug": "toronto",
+   "name": {
+    "en": "Toronto",
+    "ru": "Торонто",
+    "uk": "Торонто"
+   },
+   "wholesaleUsdKwMo": null,
+   "wholesaleRange": null,
    "retailRackUsdMo": null,
    "yoyPct": null,
    "collecting": true,
    "expected": "Q4 2026",
-   "note": "CBRE publishes only the European range ($165–265/kW/mo) for Paris; no city average yet",
+   "note": "CBRE H1 2025 Toronto profile: C$210–250/kW/mo for 250–500 kW (C$180–190 for 10 MW+); figures in CAD and from H1 2025, so the USD index row waits for a current release",
    "source": {
-    "label": "CBRE, Global Data Center Trends 2026 (17 June 2026)",
-    "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+    "label": "CBRE, North America Data Center Trends H1 2025 — Market Profiles: Toronto (8 Sep 2025)",
+    "url": "https://www.cbre.com/insights/local-response/north-america-data-center-trends-h1-2025-market-profiles-toronto"
+   }
+  },
+  {
+   "slug": "montreal",
+   "name": {
+    "en": "Montreal",
+    "ru": "Монреаль",
+    "uk": "Монреаль"
+   },
+   "wholesaleUsdKwMo": null,
+   "wholesaleRange": null,
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "collecting": true,
+   "expected": "Q4 2026",
+   "note": "CBRE H1 2025 Montreal profile: C$240–350/kW/mo for 250–500 kW (C$175–195 for 10 MW+), “record-high prices”; CAD and H1 2025, USD row pending",
+   "source": {
+    "label": "CBRE, North America Data Center Trends H1 2025 — Market Profiles: Montreal (8 Sep 2025)",
+    "url": "https://www.cbre.com/insights/local-response/north-america-data-center-trends-h1-2025-market-profiles-montreal"
+   }
+  },
+  {
+   "slug": "seoul",
+   "name": {
+    "en": "Seoul (Seoul Metropolitan Area)",
+    "ru": "Сеул",
+    "uk": "Сеул"
+   },
+   "wholesaleUsdKwMo": null,
+   "wholesaleRange": null,
+   "retailRackUsdMo": null,
+   "yoyPct": null,
+   "collecting": true,
+   "expected": "Q4 2026",
+   "note": "CBRE Korea (13 Jul 2026): average colocation rents about KRW 250,000 per kW in 2025, up from about KRW 140,000 in 2019 (+70%); published in KRW without a requirement tier, so no USD row yet",
+   "source": {
+    "label": "CBRE Korea, Korea Data Center Investment (13 July 2026)",
+    "url": "https://www.cbrekorea.com/en/insights/reports/korea-data-center-investment"
    }
   }
  ],
