@@ -2,7 +2,7 @@
  "name": "Coloprice GPU Rental Price Index",
  "url": "https://coloprice.com/data/",
  "license": "CC BY 4.0 — free to use with a visible link to https://coloprice.com",
- "updated": "2026-10-16",
+ "updated": "2026-11-06",
  "gpus": [
   {
    "model": "NVIDIA GB200 (per GPU, NVL72)",
@@ -40,12 +40,12 @@
    "vramGb": 180,
    "onDemandUsdHr": {
     "min": 3.69,
-    "median": 6.25,
+    "median": 6.9,
     "max": 16.11
    },
    "contract1yUsdHr": null,
    "note": {
-    "en": "Floor holds: DeepInfra's $3.69/GPU-hr on-demand listing (reconfirmed today, 'no wait times, no complex configs') remains the cheapest confirmed on-demand price, edging out Packet.ai's $3.75/GPU-hr Dynamic-tier rate. Verda's headline $3.12/GPU-hr is still a spot rate, not on-demand — Verda's own on-demand price is $6.23/GPU-hr, so it stays excluded from the floor. Typical price ticks up slightly to ~$6.25/GPU-hr (from $6.01): AIMultiple's tracked index (~$6.52) and Vast.ai's marketplace median (~$6.82) pull the cross-provider read above CoreWeave ($4.26-$8.60), Nebius ($3.95-$7.15) and Civo ($3.79-$4.49), while Silicon Data's index reads lower at ~$5.45 — within normal cross-tracker spread, not a directional signal. Ceiling unchanged: Google Cloud's a4-highgpu-8g still prices at $16.11/GPU-hr (re-confirmed today), above Oracle's bare-metal $14.00/GPU-hr. Still no clean published 1-year rate."
+    "en": "Floor holds: DeepInfra's $3.69/GPU-hr on-demand listing (reconfirmed today, 'no wait times, no complex configs') remains the cheapest confirmed on-demand price, edging out Packet.ai's $3.75/GPU-hr Dynamic-tier rate. Verda's headline $3.12/GPU-hr is still a spot rate, not on-demand — Verda's own on-demand price is $6.23/GPU-hr, so it stays excluded from the floor. Typical price ticks up slightly to ~$6.25/GPU-hr (from $6.01): AIMultiple's tracked index (~$6.52) and Vast.ai's marketplace median (~$6.82) pull the cross-provider read above CoreWeave ($4.26-$8.60), Nebius ($3.95-$7.15) and Civo ($3.79-$4.49), while Silicon Data's index reads lower at ~$5.45 — within normal cross-tracker spread, not a directional signal. Ceiling unchanged: Google Cloud's a4-highgpu-8g still prices at $16.11/GPU-hr (re-confirmed today), above Oracle's bare-metal $14.00/GPU-hr. Still no clean published 1-year rate. Nov 2 refresh: GetDeploying shows a $7.20 provider-start median and $7.99 all-config median, with Packet.ai $3.75 lowest and AWS p6-b200 $14.24; our blended median moves to $6.90."
    },
    "sources": [
     {
@@ -102,12 +102,12 @@
    "vramGb": 141,
    "onDemandUsdHr": {
     "min": 2.09,
-    "median": 4.4,
+    "median": 4.8,
     "max": 13.78
    },
    "contract1yUsdHr": 3.4,
    "note": {
-    "en": "Floor moves to Beam's serverless H200 rate of $2.09/GPU-hr (confirmed live on Beam's own pricing page today) — FluidStack's prior $2.30 floor could not be re-verified this cycle: FluidStack no longer has a discoverable public on-demand price page and appears to be sales-quote only, so it drops out of the floor. Typical price holds at ~$4.40/GPU-hr (GetDeploying's tracked median, re-confirmed today), with cheap capacity (GMI Cloud $2.60, Jarvislabs $3.99 on-demand/$1.99 spot) offset by mid-tier providers (Hyperbolic, Crusoe, DigitalOcean, Nebius) clustering $4.0-4.6. Hyperscaler ceiling unchanged: Azure's ND96isr H200 v5 still prices at $110.24/hr for 8 GPUs = $13.78/GPU-hr — no reserved SKU exists for that instance. The prior unsourced ~$3.72 reserved-rate estimate is replaced by a concrete figure: DigitalOcean's published 12-month reserved rate of $3.40/GPU-hr (confirmed live today)."
+    "en": "Floor moves to Beam's serverless H200 rate of $2.09/GPU-hr (confirmed live on Beam's own pricing page today) — FluidStack's prior $2.30 floor could not be re-verified this cycle: FluidStack no longer has a discoverable public on-demand price page and appears to be sales-quote only, so it drops out of the floor. Typical price holds at ~$4.40/GPU-hr (GetDeploying's tracked median, re-confirmed today), with cheap capacity (GMI Cloud $2.60, Jarvislabs $3.99 on-demand/$1.99 spot) offset by mid-tier providers (Hyperbolic, Crusoe, DigitalOcean, Nebius) clustering $4.0-4.6. Hyperscaler ceiling unchanged: Azure's ND96isr H200 v5 still prices at $110.24/hr for 8 GPUs = $13.78/GPU-hr — no reserved SKU exists for that instance. The prior unsourced ~$3.72 reserved-rate estimate is replaced by a concrete figure: DigitalOcean's published 12-month reserved rate of $3.40/GPU-hr (confirmed live today). Nov 2 refresh: GetDeploying median $4.66/GPU-hr across 38 providers (lowest $2.09 unverified stock, Azure $13.78 ceiling). Nov 6 refresh: GetDeploying shows a $5.00 median across 38 providers (lowest $2.09 Beam unverified, $3.59 Runpod in stock; Azure $13.78 ceiling); our blended median moves to $4.80."
    },
    "sources": [
     {
@@ -133,12 +133,12 @@
    "vramGb": 80,
    "onDemandUsdHr": {
     "min": 1.3,
-    "median": 3.49,
+    "median": 3.9,
     "max": 12.29
    },
    "contract1yUsdHr": 3.26,
    "note": {
-    "en": "Floor unchanged at Lium.io's $1.30/GPU-hr pool (not re-verified this cycle); ceiling unchanged at Azure ND96isr H100 v5 ($98.32/hr ÷ 8 = $12.29/GPU-hr), with AWS ~$6.88 and Google Cloud ~$11 below it. Typical price edged up to ~$3.49/GPU-hr (from $3.29): first-party lists show increases — Runpod Secure Cloud H100 SXM $3.99/hr (was $3.29; Community $2.69), Lambda H100 SXM $3.99-4.29, and Nebius HGX H100 raised from $3.85 to $4.50/GPU-hr effective Oct 1, 2026 — reversing part of the 2025 decline. DigitalOcean's 12-month reserved rate of $3.26/GPU-hr (last confirmed 28 Sep) is retained as the contract figure."
+    "en": "Floor unchanged at Lium.io's $1.30/GPU-hr pool (not re-verified this cycle); ceiling unchanged at Azure ND96isr H100 v5 ($98.32/hr ÷ 8 = $12.29/GPU-hr), with AWS ~$6.88 and Google Cloud ~$11 below it. Typical price edged up to ~$3.49/GPU-hr (from $3.29): first-party lists show increases — Runpod Secure Cloud H100 SXM $3.99/hr (was $3.29; Community $2.69), Lambda H100 SXM $3.99-4.29, and Nebius HGX H100 raised from $3.85 to $4.50/GPU-hr effective Oct 1, 2026 — reversing part of the 2025 decline. DigitalOcean's 12-month reserved rate of $3.26/GPU-hr (last confirmed 28 Sep) is retained as the contract figure. Nov 2 refresh: GetDeploying median across 46 providers is $3.83/GPU-hr (lowest listed $1.75 PCIe, Google Cloud a3-highgpu-8g $11.07), so the median moves up from $3.49. Nov 6 refresh: GetDeploying lists a $3.99 provider median (lowest $1.80 HyperAI in stock, Google Cloud 8x SXM $11.07); our blended median moves to $3.90."
    },
    "sources": [
     {
@@ -265,12 +265,12 @@
    "vramGb": 32,
    "onDemandUsdHr": {
     "min": 0.25,
-    "median": 0.67,
+    "median": 0.72,
     "max": 1.09
    },
    "contract1yUsdHr": null,
    "note": {
-    "en": "Consumer flagship on marketplaces only (no hyperscaler offering): Salad Cloud still floors the market at ~$0.25/GPU-hr, unchanged since launch and re-confirmed today via ComputePrices. Median edges up further to ~$0.67/GPU-hr (ComputePrices' live tracker today, corroborating GetDeploying's own read) from last cycle's $0.65 — a modest continuation of the demand-tightening trend flagged last cycle, not a new spike. Ceiling unchanged: Beam's serverless rate ($1.09/GPU-hr, re-confirmed on Beam's own pricing page today) remains the priciest widely-published on-demand option — Beam's own on-demand (non-serverless) tier still lists from ~$0.72/GPU-hr, well below its serverless ceiling."
+    "en": "Consumer flagship on marketplaces only (no hyperscaler offering): Salad Cloud still floors the market at ~$0.25/GPU-hr, unchanged since launch and re-confirmed today via ComputePrices. Median edges up further to ~$0.67/GPU-hr (ComputePrices' live tracker today, corroborating GetDeploying's own read) from last cycle's $0.65 — a modest continuation of the demand-tightening trend flagged last cycle, not a new spike. Ceiling unchanged: Beam's serverless rate ($1.09/GPU-hr, re-confirmed on Beam's own pricing page today) remains the priciest widely-published on-demand option — Beam's own on-demand (non-serverless) tier still lists from ~$0.72/GPU-hr, well below its serverless ceiling. Nov 2 refresh: GetDeploying median $0.72/GPU-hr across 14 providers (lowest $0.35 HyperAI)."
    },
    "sources": [
     {
